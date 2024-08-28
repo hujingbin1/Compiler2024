@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cmake",
+			"label": "CMake: build",
+			"command": "build",
+			"targets": ["all"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"detail": "CMake template build task",
+			"dependsOn": ["CMake: configure"]
+		},
+
+		{
+			"type": "cmake",
+			"label": "CMake: configure",
+			"command": "configure",
+			"problemMatcher": [],
+			"detail": "CMake template configure task"
+		},
+
+		{
+			"type": "cmake",
+			"label": "CMake: rebuild",
+			"command": "cleanRebuild",
+			"problemMatcher": [],
+			"detail": "CMake template configure task"
+		}
+	]
+}
